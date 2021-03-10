@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: auto;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,.8);
+  }
+  li, a {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 20px;
+      list-style: none;
+      text-decoration: none;
+      color: white;
+      
+  }
+  header {
+      position: fixed;
+      width: 100%;
+      display: flex;
+      padding: 20px 2%;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0,0,0,.6);
+  }
+
+  .links li {
+      float: right;
+      display: block;
+      margin: 10px 20px;
+      transform: translate(300px);
+      
+  }
+  .links li a {
+      transition: all 0.3s ease 0s;
+  }
+
+  /**HOME PAGE**/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 100px;
+    
+}
+
+.home_page::before {
+    content: '';
+    background: url(img/backg.jpg);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 0.3;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    
+}
+.home_page h1 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 70px;
+    padding: 30px 0;
+}
+.home_page p {
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    justify-content: center;
+    padding: 20px 0;
+    line-height: 30px;
+}
+.second_page {
+    background: white;
+}
+.main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    
+}
+.container {
+    width: 245px;
+    height: 450px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 10px 50px;
+    padding: 4px;
+}
+.cardd {
+    border-radius:4px;
+    transition: all 0.3s linear;
+}
+.cardd:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.second_page h2 {
+    color: black;
+    text-align: center;
+    padding: 60px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+.container p {
+    color: black;
+    line-height: 20px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    justify-content: center;
+}
+.container h3 {
+    color: black;
+    text-align: center;
+    padding: 30px;
+    font-size: 23px;
+    
+    
+}
+.home_btn {
+    border: 3px solid white;
+    background-color: rgb(105, 104, 104);
+    color: white;
+    padding: 15px;
+    width: 180px;
+    margin: 27px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.card_btn {
+    border: 3px solid rgb(0, 0, 0);
+    padding: 15px;
+    width: 180px;
+    margin: 27px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.home_bt {
+display: inline-block;
+}
+.card_btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.home_btn:hover {
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+    
+}
+.home_page {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.agar {
+    display: flex;
+    justify-content: space-between;
+    
+    flex-flow: wrap;
+    padding: 30px 30px;    
+}
+.social a {
+    padding: 0 15px;
+}
+.insta .fab {
+    color: rgb(218, 51, 51)
+}
+.linkd .fab {
+    color: rgb(74, 74, 199)
+}
+.twit .fab {
+    color: rgb(63, 63, 226)
+}
+
+/*.copy_right {
+    position: relative;
+    left: 200px;
+}
+.social a {
+    position: relative;
+    left: -200px;
+    padding: 0 5px;
+}
+*/
+
+.toggle {
+    cursor: pointer;
+}
+.bar {
+    background: rgb(255, 255, 255);
+    display: none;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    color: white;
+}
+.bar::before, .bar::after {
+    content: '';
+    background: rgb(255, 254, 254);
+    display: none;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+}
+.bar::before {
+    top: 6px;
+}
+.bar::after {
+    top: -6px;
+}
+header button {
+    background-color: transparent;
+    color: white;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .bar::before, .bar::after {
+        display: block;
+    }
+    .bar {
+        display: block;
+    }
+    section {
+
+    }
+    .home_page p {
+        position: relative;
+        top: 50px;
+        margin: 10px;
+    }
+    .home_btn {
+        position: relative;
+        top: 50px;
+    }
+    header {
+        z-index: 10;
+    }
+    .second_page{
+        width: 100%;
+    }
+    .container {
+        width: 490px;
+        margin: 30px 0px;
+    }
+    .main_container {
+        width: 100%;
+    }
+    .home_page h1 {
+        font-size: 30px;
+        position: relative;
+        top: 50px;
+    }
+    .second_page h2 {
+        font-size: 20px;
+        padding: 20px;
+        position: relative;
+        top: -30px;
+    }
+    .agar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 30px;    
+    }
+    .social {
+        padding: 30px 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+/**
+        
+            .social {
+        position: relative;
+        left: 300px;
+        top: -20px;
+        padding: 15px 0;
+    }
+    .copy_right {
+        position: relative;
+        left: -85px;
+        top: 30px;
+        
+    }
+----------------
+        max-width: 800px;
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 0 20px;
+        line-height: 1.5;
+     
+     
+        display: flex;
+      align-items: center;
+       
+      **/
+      /**
+.home_page {
+    background: url(img/backg.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+**/
+/**
+@media (max-width: 1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+@media (max-width: 1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+**/
